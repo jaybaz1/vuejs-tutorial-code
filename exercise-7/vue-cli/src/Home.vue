@@ -1,7 +1,7 @@
 <template>
     <div>
         <app-server-status 
-            v-for="(server, index) in 5" 
+            v-for="(server, index) in 7" 
             v-bind:server="server"
             v-bind:index="index"  
             v-bind:key="server">
