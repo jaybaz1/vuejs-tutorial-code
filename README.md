@@ -1,1 +1,1 @@
-# vuejs-tutorial-code
+# Udemy Vue.JS tutorials coursework
