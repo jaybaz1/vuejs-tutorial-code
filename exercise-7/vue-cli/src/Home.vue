@@ -6,9 +6,12 @@
             v-bind:index="index"  
             v-bind:key="server">
         </app-server-status>
+
+        
     </div>
 </template>
 
+// Local component
 <script>
     import ServerStatus from './ServerStatus.vue';
 

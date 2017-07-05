@@ -3,6 +3,7 @@
         <p>Server Status: {{ status }}</p>
         <hr>
         <button @click="changeStatus">Change Status</button>
+        <app-server-details></app-server-details>
     </div>
 </template>
 
