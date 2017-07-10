@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import App from './App.vue'
-import Header from './Header.vue'
-import Footer from './Footer.vue'
-import Server from './Server.vue'
-import ServerDetails from './ServerDetails.vue'
+import Header from './components/shared/Header.vue'
+import Footer from './components/shared/Footer.vue'
+import Server from './components/server/Server.vue'
+import ServerDetails from './components/server/ServerDetails.vue'
 
 Vue.component('app-header', Header);
 Vue.component('app-footer', Footer);
