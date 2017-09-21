@@ -1,7 +1,9 @@
 <template>
-    <li class="list-group-item" @click="showDetails">
-        <div>Server #{{ id }}</div>
-        <div>Status: {{status}}</div>
+    <li class="list-group-item">
+        <a @click="showDetails()">
+            <div>Server #{{ id }}</div>
+            <div>Status: {{status}}</div>
+        </a>
     </li>
 
 </template>
@@ -18,10 +20,11 @@
                 type: String
             }
         },
-        created(){
-            eventBus.$on('serverReset',  (data) => { 
-                this.status = data;
-            });
+        methods:{
+            showDetails(){
+                console.log(this.id);
+                this.$emit('showServerDetails', this.id);
+            }
         }
     }
 </script>

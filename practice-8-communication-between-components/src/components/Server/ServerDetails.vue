@@ -1,20 +1,19 @@
 <template>
     <div class="col-xs-12 col-sm-6">
+        <div>Server Id: {{server.id}}</div>
         <button @click="resetServer">resetServer</button>
     </div>
 
 </template>
 
 <script>
-    import { eventBus } from '../../main';  
     
     export default {
-        props: ['status'],
+        props: ['server'],
         methods:{
             resetServer(){
-                this.status = 'Normal';
-                //eventBus.$emit('ageWasEdited', this.userAge); // method 1
-                eventBus.$emit(this.status);
+                this.server.status = 'Normal';
+                this.$emit('serverWasReset', this.server);
             }
         }
     }
